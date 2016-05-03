@@ -7,7 +7,7 @@ module.exports = {
   //   filename: "bundle.js"
   // },
 
-  entry: './main.js',
+  entry: _dirname + '/app/main.js',
   output: {
     // path: _dirname + "/public",
     filename: "bundle.js"
@@ -48,11 +48,12 @@ module.exports = {
       {
         test: /\.json$/,
         loader: 'json'
-      },
-      {
-        test: /\.html$/,
-        loader: "raw-loader"
       }
+      // ,
+      // {
+      //   test: /\.html$/,
+      //   loader: "raw-loader"
+      // }
     ]
   },
   plugins: [
